@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Punnathat.k | Line API Expert</title>
+    <link rel="icon" href="/punnathat-k-lineoa/assets/favicon-lm3LneE9.ico" />
     <meta
       name="description"
       content="บริการพัฒนา Line API ครบวงจร: รับทำ Line Flex Message Template, LineBot AI, ระบบ Webhook, Broadcast LineOA อัตโนมัติ และ Line LIFF เชื่อมต่อ Line Login โดย Punnathat.k งานคุณภาพ ซัพพอร์ตตลอดชีพ"
@@ -88,7 +89,7 @@
       }
     </style>
 
-    <link rel="stylesheet" href="/index.css" />
+    
     <script type="importmap">
       {
         "imports": {
@@ -102,6 +103,22 @@
     <script type="module" crossorigin src="/punnathat-k-lineoa/assets/index-BoFQ3dQl.js"></script>
   </head>
   <body class="bg-slate-50 text-slate-900">
+    <script>
+      ;(function () {
+        const threshold = 160
+        const detect = () => {
+          if (
+            window.outerWidth - window.innerWidth > threshold ||
+            window.outerHeight - window.innerHeight > threshold
+          ) {
+            document.documentElement.innerHTML = ''
+            location.replace('about:blank')
+          }
+        }
+
+        setInterval(detect, 500)
+      })()
+    </script>
     <div id="root"></div>
   </body>
 </html>
